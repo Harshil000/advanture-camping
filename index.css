@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    background-image: url("layered-waves-haikei.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+nav {
+    width: 98.5%;
+    height: 80px;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12.5px);
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_ul {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+.nav_li {
+    cursor: pointer;
+    transition: all .125s linear;
+}
+
+#nav_ul:hover>.nav_li:not(:hover) {
+    opacity: .5;
+}
+
+#main-1 {
+    width: 98%;
+    height: 100%;
+    /* border: 2px solid white; */
+    margin: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-1-in-container {
+    height: 98%;
+    width: 98%;
+    /* border: 2px solid red; */
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+.page1_span_1 {
+    width: 80%;
+    height: 60px;
+}
+
+#element {
+    color: transparent;
+    -webkit-text-stroke: .5px white;
+    font-size: 30px
+}
+
+#main-1-right {
+    font-size: 25px;
+}
+
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    background-image: url("layered-waves-haikei-reverse.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#page2-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    transition: all 1s linear;
+}
+
+.main-2-container {
+    height: 95%;
+    width: 95%;
+    /* border: 2px solid pink; */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#moveable-text {
+    height: 100px;
+    width: 98%;
+    /* border: 2px solid green; */
+    margin-top: 25px;
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: .5px white;
+}
+
+
+.page2_span {
+    height: 60px;
+    width: 98%;
+    color: white;
+    font-size: 20px;
+}
+
+#page2-title {
+    color: red;
+    font-size: 30px;
+}
+
+.page2_img {
+    margin: 15px;
+    height: 50%;
+    width: 98%;
+    /* border: 2px solid white; */
+    border-radius: 50px;
+}
+
+#youth_team {
+    background-image: url("youth_team.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page3 {
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    background-image: url(layered-waves-haikei.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page3-containers {
+    width: 98%;
+    height: 98%;
+    margin: 20px;
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.page3_span {
+    width: 98%;
+    color: white;
+    font-size: 25px;
+}
+
+#page4 {
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    background-image: url(layered-waves-haikei-reverse.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page4_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page4_moveable {
+    height: 100px;
+    width: 98%;
+    /* border: 2px solid green; */
+    margin-top: 25px;
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: .5px white;
+}
+
+#page4_container {
+    height: 100%;
+    width: 98vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page4_containers {
+    height: 98%;
+    width: 98%;
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.page4_span {
+    width: 98%;
+    font-size: 25px;
+}
+
+#page4_ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#page5 {
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    background-color: #001220;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+#page5_nav {
+    /* height: 60px; */
+    width: 98vw;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#page5_content {
+    height: 100%;
+    width: 98vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.page5_card {
+    height: 80%;
+    width: 25%;
+    overflow: hidden;
+}
+
+#page5_card_2 {
+    position: relative;
+    height: 80%;
+    width: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.page5_card_inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: all .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transform-style: preserve-3d;
+}
+
+.face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+#front_face {
+    background-image: url("img1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#back_face {
+    background-image: url("stacked-waves-haikei-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(180deg);
+}
+
+.page5_card2_content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.page5_txt {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    transform: translateY(85%);
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.page5_img_card {
+    background-image: url("img1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.page5_card:hover .page5_card_inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+#page5_card_2:hover .page5_txt {
+    transform: translateY(60%);
+    cursor: pointer;
+}
+
+.page5_span {
+    color: white;
+
+}
+
+#page6 {
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    background-color: #001220;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+#page6_slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+}
+
+#scroll_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+    overflow: hidden;
+    color: #ED2939;
+}
+
+.scroll_text_inner {
+    animation: scroll 4s infinite;
+    height: 20px;
+}
+
+@keyframes scroll {
+    10% {
+        transform: translateY(40px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+#page6_main_text {
+    width: 80vw;
+}
+
+#page6_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 98vw;
+}
+
+.page6_main_container {
+    height: 100%;
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #03001C;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    color: #ED2939;
+}
+
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 20px #969696,
+        -13px -13px 20px #ffffff;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+}
+
+.inpu {
+    height: 50px;
+}
+
+.button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: .5px .5px 150px #252525;
+}
+
+.type1::after {
+    content: "Thanks";
+    height: 50px;
+    width: 150px;
+    background-color: #008080;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+    content: "Register Today!";
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    color: #008080;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.type1:hover::after {
+    transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+.red {
+    color: red;
+    transform: scale(1.05);
+}
+
+.purple {
+    color: #A689E1;
+}
