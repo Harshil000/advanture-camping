@@ -310,6 +310,7 @@ nav {
     height: 80%;
     width: 25%;
     overflow: hidden;
+    perspective : 1000px
 }
 
 #page5_card_2 {
